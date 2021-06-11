@@ -1,0 +1,15 @@
+.history
+.vscode
+node_modules
+
+/.local-storage
+
+config.local.json
+config.dev.json
+config.prod.json
+config.staging.json
+build
+dist
+http-test
+
+.vercel

@@ -1,0 +1,12 @@
+{
+    "nodes": [
+        NODES
+    ],
+    "apiEndpoint": "API-ENDPOINT",
+    "tangleExplorer": {
+        "transactions": "https://explorer.iota.org/devnet/transaction/:transactionHash",
+        "bundles": "https://explorer.iota.org/devnet/bundle/:bundleHash",
+        "mam": "https://explorer.iota.org/devnet/streams/0/:root/:mode/:key"
+    },
+    "googleAnalyticsId": "GOOGLE-ANALYTICS-ID"
+}

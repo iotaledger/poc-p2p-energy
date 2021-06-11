@@ -1,0 +1,21 @@
+
+{
+    "nodes": [
+        {
+            "provider": "https://NODE1",
+            "depth": 3,
+            "mwm": 9
+        },
+        {
+            "provider": "https://NODE2",
+            "depth": 3,
+            "mwm": 9
+        }
+    ],
+    "producerApiEndpoint": "https://PRODUCER-ENDPOINT",
+    "source": {
+        "id": "SOURCE-UNIQUE-ID",
+        "name": "SOURCE-NAME",
+        "type": "SOURCE-TYPE"
+    }
+}

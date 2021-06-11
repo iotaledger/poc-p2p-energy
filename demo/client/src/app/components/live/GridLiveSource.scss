@@ -1,0 +1,69 @@
+.grid-live-source {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  .grid-live-source-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &.grid-live-source-btn--selected {
+      border: 2px solid var(--jade);
+    }
+
+    .grid-live-source-btn-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      border-radius: 5px 5px 0px 0px;
+      background-color: #c4c4c4;
+
+      img {
+        height: 70%;
+      }
+    }
+
+    .grid-live-source-btn-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      padding: 0px 5px;
+      border-radius: 0px 0px 5px 5px;
+      background-color: #f3f2f1;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+
+      .icon-chevron-down,
+      .icon-chevron-up {
+        position: absolute;
+        right: 3px;
+        bottom: 0px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .grid-live-source-output {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .button {
+    margin: 2px;
+  }
+}

@@ -1,0 +1,51 @@
+.logging-view {
+  margin-top: 40px;
+  max-width: 100%;
+
+  .logging-view--list {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid var(--light-grey);
+    border-radius: 6px;
+    height: 0px;
+    transition: 200ms ease;
+    overflow: auto;
+
+    &.logging-view--list-expanded {
+      padding: 20px;
+      border: 1px solid var(--light-grey);
+      height: 300px;
+    }
+
+    .logging-view--entry {
+      display: flex;
+      flex-direction: column;
+      white-space: normal;
+      word-break: break-all;
+
+      .logging-view--entry-row {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 10px 0;
+
+        pre {
+          margin: 0 0 10px 0;
+        }
+
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+
+        div:first-child {
+          width: 160px;
+          flex-shrink: 0;
+        }
+
+        div:nth-child(2) {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+
+{
+    "nodes": [
+        {
+            "provider": "https://NODE1",
+            "depth": 3,
+            "mwm": 9
+        },
+        {
+            "provider": "https://NODE2",
+            "depth": 3,
+            "mwm": 9
+        }
+    ],
+    "gridApiEndpoint": "https://GRID-ENDPOINT",
+    "consumer": {
+        "id": "CONSUMER-UNIQUE-ID",
+        "name": "CONSUMER-NAME"
+    },
+    "seed": "SEED"
+}

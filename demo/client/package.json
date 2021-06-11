@@ -1,0 +1,66 @@
+{
+    "name": "poc-p2p-energy-demo-client",
+    "description": "Demo UI for IOTA PoC Energy",
+    "version": "1.0.0",
+    "author": "Martyn Janes <martyn.janes@iota.org>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iotaledger/poc-p2p-energy/tree/master/demo/client"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@iota/client-load-balancer": "github:iotaledger/client-load-balancer#799f989247ead54ac822b4bdc16364b402daa160",
+        "axios": "^0.19.2",
+        "chartist": "^0.11.0",
+        "classnames": "^2.2.6",
+        "iota-css-theme": "github:iotaledger/iota-css-theme",
+        "iota-react-components": "github:iotaledger/iota-react-components",
+        "p2p-energy": "file:../..",
+        "p2p-energy-common": "file:../../common",
+        "react": "^16.13.1",
+        "react-chartist": "^0.14.3",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "^3.4.1"
+    },
+    "engines": {
+        "node": "10.x.x"
+    },
+    "scripts": {
+        "start": "cross-env PORT=3000 react-app-rewired start",
+        "lint": "tslint --project ./tsconfig.json",
+        "build": "react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-scripts eject",
+        "sass-lint": "sass-lint -v -c ./.sass-lint.yml"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/chartist": "^0.9.47",
+        "@types/classnames": "^2.2.10",
+        "@types/node": "^14.0.5",
+        "@types/react": "^16.9.25",
+        "@types/react-dom": "^16.9.5",
+        "@types/react-router-dom": "^5.1.3",
+        "cross-env": "^7.0.2",
+        "react-app-rewired": "^2.1.5",
+        "sass": "^1.32.8",
+        "sass-lint": "^1.12.1",
+        "tslint": "^6.1.0",
+        "tslint-eslint-rules": "^5.4.0",
+        "tslint-microsoft-contrib": "^6.0.0",
+        "tslint-react": "^5.0.0",
+        "typescript": "^3.8.3"
+    }
+}

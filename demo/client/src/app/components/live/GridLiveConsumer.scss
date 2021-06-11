@@ -1,0 +1,139 @@
+.grid-live-consumer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  overflow: hidden;
+
+  @media (max-width: 514px) {
+    flex-direction: column;
+  }
+
+  .grid-live-consumer-sub-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+
+    .grid-live-consumer-sub-title-minor {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  .grid-live-consumer-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    .grid-live-consumer-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      min-width: 100px;
+      margin: 0;
+      padding: 0;
+      transition: 200ms ease;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      outline: none;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover,
+      &.grid-live-consumer-btn--expanded {
+        border: 2px solid var(--jade);
+      }
+
+      .grid-live-consumer-btn-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        border-radius: 5px 5px 0px 0px;
+        background-color: #8e8e8e;
+
+        img {
+          height: 70%;
+        }
+      }
+
+      .grid-live-consumer-btn-bottom {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        padding: 0px 5px;
+        border-radius: 0px 0px 5px 5px;
+        background-color: #f3f2f1;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+
+        .icon-chevron-down,
+        .icon-chevron-up {
+          position: absolute;
+          right: 3px;
+          bottom: 0px;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .grid-live-consumer-info {
+      margin-left: 20px;
+      white-space: nowrap;
+
+      .grid-live-consumer-info-id {
+        margin-top: 8px;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+
+      .grid-live-consumer-info-data {
+        margin-top: 8px;
+        font-size: 14px;
+
+        span:first-child {
+          font-weight: bold;
+          min-width: 90px;
+          margin-right: 20px;
+          display: inline-block;
+        }
+
+        button {
+          font-size: 14px;
+          font-weight: bold;
+          color: var(--jade);
+          background: none;
+          border: none;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .grid-live-consumer-detail {
+    display: none;
+    height: 0;
+    transition: 300ms ease;
+
+    &.grid-live-consumer-detail--expanded {
+      display: block;
+      height: auto;
+    }
+
+    .charts {
+      .ct-chart {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.grid-live-consumer + .grid-live-consumer {
+  margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        NODES
+    ],
+    "dynamoDbConnection": {
+        "region": "DB-AWS-REGION",
+        "accessKeyId": "DB-AWS-ACCESS-KEY-ID",
+        "secretAccessKey": "DB-AWS-SECRET-ACCESS-KEY",
+        "dbTablePrefix": "DB-TABLE-PREFIX"
+    },
+    "s3Connection": {
+        "region": "STORAGE-AWS-REGION",
+        "accessKeyId": "STORAGE-AWS-ACCESS-KEY-ID",
+        "secretAccessKey": "STORAGE-AWS-SECRET-ACCESS-KEY",
+        "bucketPrefix": "STORAGE-BUCKET-PREFIX"
+    },
+    "walletSeed": "WALLET-SEED",
+    "allowedDomains": [
+        "ALLOWED-DOMAIN"
+    ]
+}

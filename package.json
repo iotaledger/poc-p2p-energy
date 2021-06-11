@@ -1,0 +1,15 @@
+{
+    "name": "p2p-energy",
+    "description": "IOTA P2P Energy PoC",
+    "version": "1.0.0",
+    "author": "Martyn Janes <martyn.janes@iota.org>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iotaledger/poc-p2p-energy.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build-common": "cd common && npm install && npm run build && cd ..",
+        "build-demo": "npm run build-common && cd demo/client && npm install && npm run build"
+    }
+}
